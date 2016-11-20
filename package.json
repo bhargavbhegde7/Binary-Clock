@@ -11,5 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "electron": "^1.4.7"
-  }
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/bhargavbhegde7/binary-clock.git"
+}
 }
