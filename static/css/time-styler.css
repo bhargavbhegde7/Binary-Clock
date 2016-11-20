@@ -41,6 +41,11 @@ body{
   height:21px;
   float:left;
   margin-left: 5px;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
 }
 
 .blink-dot{
