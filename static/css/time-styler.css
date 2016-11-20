@@ -1,0 +1,52 @@
+body{
+  background-color: lightblue;
+}
+
+.time-container{
+
+}
+
+.seconds{
+  width:100%;
+}
+
+.secbit{
+  /*border-style: solid;
+  border-width: 0.5px;*/
+  background-color:white;
+  width:41px;
+  height:41px;
+  float:left;
+  margin-left: 5px;
+}
+
+.hrs-min{
+  padding-top: 65px;
+  width:100%;
+}
+
+.h-m-bit{
+  /*border-style: solid;
+  border-width: 0.5px;*/
+  background-color:white;
+  width:21px;
+  height:21px;
+  float:left;
+  margin-left: 5px;
+}
+
+.blinker{
+  background-color:lightblue;
+  width:10px;
+  height:21px;
+  float:left;
+  margin-left: 5px;
+}
+
+.blink-dot{
+  background-color:white;
+  width:4px;
+  height:6px;
+  margin-left: 3px;
+  margin-top: 3px;
+}

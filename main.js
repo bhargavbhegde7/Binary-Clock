@@ -4,7 +4,7 @@ const path = require('path');
 const url = require('url');
 
 var startHandler = ()=>{
-  let win = new BrowserWindow({width:300,height:200, frame: false});
+  let win = new BrowserWindow({width:310,height:130, frame: false});
 
   win.loadURL(url.format({
     pathname: path.join(__dirname, 'static/html/index.html'),

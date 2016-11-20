@@ -7,7 +7,38 @@
     <link rel="stylesheet" href="../css/time-styler.css">
   </head>
   <body>
-    <p onclick="myfun()">helo</p>
+    <div class="time-container">
+      <!-- seconds -->
+      <div class="seconds">
+        <div class="secbit" id="sec-5"></div>
+        <div class="secbit" id="sec-4"></div>
+        <div class="secbit" id="sec-3"></div>
+        <div class="secbit" id="sec-2"></div>
+        <div class="secbit" id="sec-1"></div>
+        <div class="secbit" id="sec-0"></div>
+      </div>
+
+      <div class="hrs-min">
+        <!-- minutes -->
+        <div class="h-m-bit" id="h-3"></div>
+        <div class="h-m-bit" id="h-2"></div>
+        <div class="h-m-bit" id="h-1"></div>
+        <div class="h-m-bit" id="h-0"></div>
+
+        <div class="blinker">
+          <div class="blink-dot"></div>
+          <div class="blink-dot"></div>
+        </div>
+
+        <!-- hours -->
+        <div class="h-m-bit" id="m-5"></div>
+        <div class="h-m-bit" id="m-4"></div>
+        <div class="h-m-bit" id="m-3"></div>
+        <div class="h-m-bit" id="m-2"></div>
+        <div class="h-m-bit" id="m-1"></div>
+        <div class="h-m-bit" id="m-0"></div>
+      </div>
+    </div>
     <script>require('../../control/handler.js')</script>
   </body>
 </html>
