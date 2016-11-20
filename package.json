@@ -1,0 +1,15 @@
+{
+  "name": "binary-clock",
+  "version": "1.0.0",
+  "description": "binary desktop clock",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron main.js",
+    "start": "electron main.js"
+  },
+  "author": "bhargav",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.4.7"
+  }
+}
