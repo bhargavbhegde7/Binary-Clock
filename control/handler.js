@@ -38,15 +38,43 @@ function dec2bin(dec){
     return (dec >>> 0).toString(2);
 }
 
+function setDivVal(divId, isHigh){
+  var divColor = 'lightblue';
+  if(isHigh==="1"){
+    divColor = 'white';
+  }
+  document.getElementById(divId).style.backgroundColor = divColor;
+}
+
+function handleSecondSquares(secondsArray){
+  for(var i = 0; i < 6; i++){
+    setDivVal('sec-'+i, secondsArray[5-i]);
+  }
+}
+
+function handleMinuteSquares(minutesArray){
+  console.log(minutesArray);
+  for(var i = 0; i < 6; i++){
+    setDivVal('m-'+i, minutesArray[5-i]);
+  }
+}
+
+function addPadding(binArray, reqLength){
+  var extraLength = reqLength - binArray.length;
+  for(var i = 0; i<extraLength; i++){
+    binArray.unshift("0");
+  }
+  return binArray;
+}
+
 setInterval(function() {
   var dateTime = getDateTime();
 
-  var seconds = parseInt(dateTime.substring(17, 19));
-  var minutes = parseInt(dateTime.substring(14, 16));
-  var hours = parseInt(dateTime.substring(11, 13));
+  //arrays of '0' and '1'
+  var seconds = dec2bin(parseInt(dateTime.substring(17, 19))) .split("");
+  var minutes = dec2bin(parseInt(dateTime.substring(14, 16))).split("");
+  var hours = dec2bin(parseInt(dateTime.substring(11, 13))).split("");
 
-  // document.getElementById('sec').innerHTML = dec2bin(seconds);
-  // document.getElementById('min').innerHTML = dec2bin(minutes);
-  // document.getElementById('hr').innerHTML = dec2bin(hours);
-
+  handleSecondSquares(addPadding(seconds, 6));
+  handleMinuteSquares(addPadding(minutes, 6));
 }, 1000);

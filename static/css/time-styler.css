@@ -27,8 +27,9 @@ body{
 }
 
 .h-m-bit{
-  /*border-style: solid;
-  border-width: 0.5px;*/
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: white;
   background-color:white;
   width:21px;
   height:21px;
