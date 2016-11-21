@@ -4,7 +4,7 @@ const path = require('path');
 const url = require('url');
 
 var startHandler = ()=>{
-  let win = new BrowserWindow({width:310,height:130, frame: false});
+  let win = new BrowserWindow({width:345,height:155, frame: false});
 
   win.loadURL(url.format({
     pathname: path.join(__dirname, 'static/html/index.html'),
@@ -12,7 +12,7 @@ var startHandler = ()=>{
     slashes: true
   }));
 
-  win.webContents.openDevTools();
+  //win.webContents.openDevTools();
 
   win.on('closed', () => {
     console.log("closing the window");

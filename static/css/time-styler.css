@@ -11,11 +11,12 @@ body{
 }
 
 .secbit{
-  /*border-style: solid;
-  border-width: 0.5px;*/
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: white;
   background-color:white;
-  width:45px;
-  height:45px;
+  width:43px;
+  height:43px;
   float:left;
   margin-left: 5px;
 }
