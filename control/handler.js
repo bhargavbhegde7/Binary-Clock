@@ -30,6 +30,7 @@ function getDateTime() {
     }
 
     var dateTime = year+'/'+month+'/'+day+' '+hour+':'+minute+':'+second;
+    console.log(dateTime);
     return dateTime;
 }// format :  ---2016/11/21 19:43:46---
 
@@ -53,9 +54,14 @@ function handleSecondSquares(secondsArray){
 }
 
 function handleMinuteSquares(minutesArray){
-  console.log(minutesArray);
   for(var i = 0; i < 6; i++){
     setDivVal('m-'+i, minutesArray[5-i]);
+  }
+}
+
+function handleHourSquares(hoursArray){
+  for(var i = 0; i < 5; i++){
+    setDivVal('h-'+i, hoursArray[4-i]);
   }
 }
 
@@ -77,4 +83,5 @@ setInterval(function() {
 
   handleSecondSquares(addPadding(seconds, 6));
   handleMinuteSquares(addPadding(minutes, 6));
+  handleHourSquares(addPadding(hours, 5));
 }, 1000);
