@@ -12,7 +12,7 @@ var startHandler = ()=>{
     slashes: true
   }));
 
-  //win.webContents.openDevTools();
+  win.webContents.openDevTools();
 
   win.on('closed', () => {
     console.log("closing the window");
