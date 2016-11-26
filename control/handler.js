@@ -47,6 +47,9 @@ function setDivVal(divId, isHigh){
   document.getElementById(divId).style.backgroundColor = divColor;
 }
 
+
+//TODO make handle function single
+
 function handleSecondSquares(secondsArray){
   for(var i = 0; i < 6; i++){
     setDivVal('sec-'+i, secondsArray[5-i]);
@@ -65,6 +68,7 @@ function handleHourSquares(hoursArray){
   }
 }
 
+//this keeps the length of the array constant by adding extra zeros in the beginning to componsate for the LSB-MSB thing
 function addPadding(binArray, reqLength){
   var extraLength = reqLength - binArray.length;
   for(var i = 0; i<extraLength; i++){

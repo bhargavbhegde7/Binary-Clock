@@ -1,0 +1,1 @@
+electron D:\work\js\electron\binary-clock\main.js
