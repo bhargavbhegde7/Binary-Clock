@@ -14,3 +14,6 @@
 * npm install 
 
 * electron main.js
+
+
+![GitHub Logo](/demo/binclock.PNG)
