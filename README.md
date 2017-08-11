@@ -17,3 +17,5 @@
 
 
 ![GitHub Logo](/demo/binclock.PNG)
+
+The top big boxes are seconds, bottom left hours, bottom right minutes.
