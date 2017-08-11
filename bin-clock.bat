@@ -1,1 +1,1 @@
-electron D:\work\js\electron\binary-clock\main.js
+electron <path-to your directory>\binary-clock\main.js

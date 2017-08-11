@@ -1,3 +1,3 @@
 Set WshShell = CreateObject("WScript.Shell") 
-WshShell.Run chr(34) & "C:\Users\goodbytes\Desktop\bin-clock.bat" & Chr(34), 0
+WshShell.Run chr(34) & "<path to your batch script>\bin-clock.bat" & Chr(34), 0
 Set WshShell = Nothing
